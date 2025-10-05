@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+
+  <div class="mode-selector">
+    <label>
+      <input type="radio" name="mode" value="pvc" checked>
+      Player vs Computer
+    </label>
+    <label>
+      <input type="radio" name="mode" value="pvp">
+      Player vs Player
+    </label>
+  </div>
+
+  <div class="scoreboard">
+    <span id="playerScore">Player 1: 0</span> | 
+    <span id="computerScore">Player 2: 0</span>
+  </div>
+
+  <div class="choices" id="choices">
+    <button class="choice" data-choice="rock">✊ Rock</button>
+    <button class="choice" data-choice="paper">✋ Paper</button>
+    <button class="choice" data-choice="scissors">✌️ Scissors</button>
+  </div>
+
+  <div class="result" id="result">
+    <h2 id="resultMsg">Make your move!</h2>
+  </div>
+
+  <button id="reset">Reset Game</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
